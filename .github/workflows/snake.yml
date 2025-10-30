@@ -1,9 +1,9 @@
 name: Generate Snake Animation
 
 on:
-  schedule: # Runs once a day
-    - cron: "0 0 * * *"
-  workflow_dispatch: # Allows manual trigger
+  schedule:
+    - cron: "0 0 * * *"  # Runs once a day
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -18,13 +18,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate Snake Game
+      - name: Generate both light and dark snakes
         uses: Platane/snk@v3
         with:
           github_user_name: AzizbekShokirov
-          outputs: dist/snake.svg
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Push Snake Animation
+      - name: Push Snake Animation to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
