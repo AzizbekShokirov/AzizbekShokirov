@@ -29,7 +29,7 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=AzizbekShokirov&show_icons=true&theme=dracula" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AzizbekShokirov&layout=compact&theme=dracula" height="150" />
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AzizbekShokirov&layout=compact&theme=dracula" height="150" /> -->
 </p>
 
 <p align="center">
